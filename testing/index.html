@@ -10,12 +10,63 @@ set this, and it can help avoid problems later on-->
 , preventing mobile browsers from rendering pages wider than the viewport and then shrinkng them down-->
     <title>My test page</title> <!-- title element sets the title of your page, which is the title that appears in the browser tab the page is 
 loaded in. It is also used to descrive the page when you bookmark/favorite it-->
-    <title> <!-- the body element contains all the content that you want to show to the web users when they visit your page, whether that is text 
+<!-- the body element contains all the content that you want to show to the web users when they visit your page, whether that is text 
 , images, videos, games, playable audio trakcs, or whatever else. At the moment it only contains a single image element but we will add more contentlater on.-->
-          Second test for enviroment
-        </title>
     </head>
     <body>
-        <img src="" alt="My test image" />
-    </body>
+        <h1>
+      TITLE: EPIC ANIME FALLEN ANGEL 2000'S !!!!!
+    </h1><img src="images/a9e9e5bfcdc8510c17be6ad6c769e731.jpg" alt="This is an image of a fallen angel" />
+    <p> Elements such as the img tag have no content or closing tag, and are called empty or void elements. They are sometimes wirtten with a traiing slash at the end of their single tag "&lt;img \&gt;", but this is optional</p>
+    <text> This is a enviroment test </text> 
+    <p> Note that most HTML elements consist of an opening tag (for example body) followed by the elements content, followed by a closing tag. Some HTML elements also have attributes, which contain extra settings or information about the element -- in example we see charset, name, and src.
+    </p>
+    <p>
+      <text>
+      alt when used with img is the alternate text that is displayed given the user is visually impaired and they use tools such as screen readers to help read out text to them. It is also used when something has gone wrong causing the image not to display, if the src attribute does not contain a valid path to an image, the alt text will be displayed instead.
+    </text>
+  </p>
+    <p>
+      <h1>
+      this is test heading 1
+    </h1>
+    <h2>
+      this is test heading 2
+    </h2>
+    <h3>
+      this is test heading 3
+    </h3>
+    <h4>
+      this is test heading 4
+    </h4>
+    </p>
+    <p>
+      Heading elements allow you to specify that certain parts of your content are headings or subheadings as shown by the 4 heading levels here, keep in mind there are up to 6 heading levels and often you will only use 3 to 4 at most. This can be thought of as how books have a main title, chapter titles, and subtitles. Also I have been using them often in the HTML code but the "&lt;p&gt;" is the paragraph element and they are used for containing paragraphs of text, you will use these frequently when marking up regular text content.
+    </p>
+    <p>
+      Lists: A lot of web content is lists and HTML has special elements for these. Marking up lists always consists of at least two elements. The most common list types are ordered and unordered list "&lt;ul&gt;" and "&lt;ol&gt;". Unordered list are for lists where the order of the items does not matter, such as a shopping list. These are wrapped by the element shown above/before ul. Ordered lists are for lists where the order of the items does matter, such as a list of cooking instructions in a recipe. These are wrapped by the ol element. <b>Each item inside the lists is put inside an "&lt;li&gt;" element which stands for list item. </b> <br>
+      <br>
+      Example list shown here:
+      <ul>
+        <li>Langchain</li>
+        <li>VectorDB</li>
+        <li>Kubeflow</li>
+        <li>RAGs</li>
+        <li>MLOps</li>
+      </ul>
+    </p>
+    <p>
+      Creating links: Links are very important -- they are what makes the web a web! To add a link, we need to use an "&lt;a&gt;" element, with "a" being short for "anchor". To make text within your paragraph into a link follow these steps: <br>
+      <ol>
+      <li>1. Choose some text</li>
+      <li>2. Wrap the text in an &lt;a&gt; element as shown here</li>
+      <li><a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a></li>
+      <li>3. Give the &lt;a&gt; element an href attribute as shown in HTML code</li>
+      <li>4. Fill the value of this attribute with the web address that you want the link to point to!</li>
+      <li> Please note that if you omit the https:// or http:// part, called the protocol, at the beginning of the web address you may get unexpected results. After making the link make sure it is sending you where you wanted it to!<br>
+        Side Note: href stans for hypertext reference.
+      </li>
+    </ol>
+    </p>
+  </body>
 </html>
