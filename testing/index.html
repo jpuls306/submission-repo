@@ -3,7 +3,10 @@
   <head> <!-- The head element acts as a container for all the stuff you want to include on the HTML page that is not content you are showing
 to your page viewers, this includes things like keywords, a page description that you want to appear in search results, CSS to style the content
 character set declerations, and more-->
-    <link href="styles/style.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet"/>
     <meta charset="utf-8" /> <!-- this element sets the character set your document should use to UTF 8, which includes most characters
 from the vast majority of written languages, essentially it can now handle anyh textual content you might put on it, there is no reason not to 
 set this, and it can help avoid problems later on-->
@@ -85,6 +88,13 @@ loaded in. It is also used to descrive the page when you bookmark/favorite it-->
       In this CSS example, p is called a <b>selector</b> -- it selects the element(s) to style. In particular, p selects all the paragraphs in the HTML. The line inside the curly braces { } is called a <b>declaration</b> - it sets a value for a specific property. In this case, the property is color, which controls the text color of the paragraphs, and the property value set is red. <br>
       <b>The whole structure listed above is called a ruleset also often referred to as a rule</b><br>
       Rulesets can have multiple declerations, and you must use a semicolon ";" to seperate one declaration from the next. Within each declaration, you must use a colon ":" to seperate the property and its value.
+      <br>
+      You can also include multiple selectors in one rule, remember selector we started manipulating was p elements. In the case you want to manipulate multiple you can separate them by commas, for example -> <br>
+      p,<br>
+      .my-class,<br>
+      #my_id {<br>
+         color: red; <br>
+      }<br>
   </p>
   </body>
 </html>
