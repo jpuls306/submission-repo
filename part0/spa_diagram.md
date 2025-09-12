@@ -1,26 +1,31 @@
 # New Note Diagram
+
 ```mermaid
 sequenceDiagram
     participant browser
     participant server
 
     browser->>server GET https://studies.cs.helsinki.fi/exampleapp/spa
-    server activated
+    activate server
     server-->>browser: HTML document
-    server deactivated
+    deactivate server
 
     browser->>server GET https://studies.cs.helsinki.fi/exampleapp/main.css
-    server activated
+    activate server
     server-->>browser: CSS document
-    server deactivated
+    deactivate server
 
     browser->>server GET https://studies.cs.helsinki.fi/exampleapp/spa.js
-    server activated
+    activate server
     server-->>browser: Javascript file
-    server deactivated
+    deactivate server
+
+    Note right of browser: Browser executes spa.js, which fetches initial data
 
     browser->>server GET https://studies.cs.helsinki.fi/exampleapp/data.json
-    server activated
-    server-->>browser: JSON file is given to browser and parsed
-    server deactivated
+    activate server
+    server-->>browser: JSON data
+    deactivate server
+
+    Note right of browser: JS renders notes from the fetched JSON
 ```
