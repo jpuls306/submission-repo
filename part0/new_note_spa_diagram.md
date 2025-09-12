@@ -29,10 +29,10 @@ sequenceDiagram
 
     Note right of browser: JS renders notes from the fetched JSON
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     activate server
-    server-->>browser: JSON file is parsed to JS file so notes SPA updates with new note added
+    server-->>browser: 201 created (acknowledgement)
     deactivate server
 
-    Note right of browser: JS renders new_note_spa from the JSON file now containing the new notes content and date
+    Note right of browser: JS updates DOM API immediately with new note content and date, without full page reload
 ```
